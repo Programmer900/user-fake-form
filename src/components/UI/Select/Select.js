@@ -19,7 +19,6 @@ const SelectInput = props => {
                 <option value="">{options.name}</option>
                 {options.items.map(o => <option key={`${props.id}+${Math.random()}`} value={o}>{o}</option>)}
             </Select>
-            <span className={'errorMessage'}>{props.errorMessage}</span>
         </div>
     )
 }

@@ -17,9 +17,8 @@ const Input = props => {
                 id={props.id}
                 type={inputType}
                 variant={props.variant}
-                label="Фамилия"
                 label={props.label}
-                InputLabelProps={InputLabelProps}
+                InputLabelProps={InputLabelProps || null}
                 fullWidth
                 onChange={props.onChange}
             />
